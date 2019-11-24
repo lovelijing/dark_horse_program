@@ -2,6 +2,7 @@ import threading
 import time
 
 
+
 def sing():
     for i in range(5):
         print('------正在唱歌---------')
@@ -19,6 +20,8 @@ def main():
     t2 = threading.Thread(target = dance)
     t1.start()
     t2.start()
+
+    print(threading.enumerate())
 
 
 
