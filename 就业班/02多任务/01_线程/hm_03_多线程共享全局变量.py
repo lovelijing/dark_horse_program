@@ -3,7 +3,7 @@ import threading
 # 1、为直接使用如myname和mytemp两个全局变量
 # 2、使用参数的方法使用全局变量，如mystr
 myname = [1,2]
-mytemp = 123
+mytemp = 126
 mystr = ('ab','cd','efg')
 
 
