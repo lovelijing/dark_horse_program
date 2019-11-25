@@ -11,7 +11,7 @@ def demo1(s1):
     global  mytemp      # 因为改变了mytemp的指向，所有这里要加global指明mytemp是全局变量
     mytemp = mytemp + 1
     myname.append(3)    # 因为没有改变myname的指向，因此不用global
-    print(myname, s1)
+    print(myname, s1[1])
     print(mytemp)
 
 
