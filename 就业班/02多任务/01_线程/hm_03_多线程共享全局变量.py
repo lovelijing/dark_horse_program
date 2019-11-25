@@ -1,7 +1,7 @@
 import threading
 # 多线程共有两种方式使用全局变量
 # 1、为直接使用如myname和mytemp两个全局变量
-# 2、使用参数的方法使用全局变量，如mystr
+# 2、用参数的方法使用全局变量，如mystr，注意26,27行的args，args必须等于元祖
 myname = [1,2]
 mytemp = 126
 mystr = ('ab','cd','efg')
@@ -23,8 +23,8 @@ def demo2(s1):
     print(mytemp)
 
 def main():
-    t1 = threading.Thread(target = demo1,args = (mystr,))
-    t2 = threading.Thread(target = demo2,args = (mystr,))
+    t1 = threading.Thread(target = demo1, args = (mystr,))
+    t2 = threading.Thread(target = demo2, args = (mystr,))
     t1.start()
     t2.start()
 
