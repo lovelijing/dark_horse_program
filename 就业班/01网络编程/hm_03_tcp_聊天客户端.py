@@ -23,7 +23,7 @@ def tcp_clinet():
         if recv_data == b'exit':
             print('服务器端停止服务！')
             break
-    # 06-关闭套接字)
+    # 06-关闭套接字
     tcp_client_socket.close()
 
 
