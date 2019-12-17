@@ -7,7 +7,7 @@ def main():
         send_data = input('请输入要发送的数据：')
         if send_data == 'exit':
             break
-        udp_socket.sendto(send_data.encode("gbk"), ('192.168.2.102',8080))
+        udp_socket.sendto(send_data.encode("gbk"), ('192.168.2.102', 8080))
     udp_socket.close()
 
 
