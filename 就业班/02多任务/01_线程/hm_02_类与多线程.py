@@ -4,7 +4,7 @@ import time
 
 class mythread(threading.Thread):
     def run(self):
-        for i  in range(3):
+        for i in range(3):
             print('类和线程' + str(time.time()))
             time.sleep(1)
 
