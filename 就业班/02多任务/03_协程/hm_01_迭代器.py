@@ -1,3 +1,6 @@
+# 用迭代器计算并显示斐波那切数列
+
+
 class Fiblist(object):
     def __init__(self,num):
         self.num = num
@@ -7,7 +10,6 @@ class Fiblist(object):
 
     def __iter__(self):
         return self
-
 
     def __next__(self):
         if self.count < self.num:
