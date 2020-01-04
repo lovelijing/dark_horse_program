@@ -1,7 +1,7 @@
 # 用迭代器计算并显示斐波那切数列
 
 
-class Fiblist(object):  # 一个类中如果有__iter__函数就可以吧函数看成迭代器
+class Fiblist(object):  # 一个类中如果有__iter__和__next__方法就可以吧函数看成迭代器
     def __init__(self,num):
         self.num = num
         self.a = 0
