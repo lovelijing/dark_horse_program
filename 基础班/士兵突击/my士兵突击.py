@@ -1,4 +1,5 @@
 class Qiang:
+
     def __init__(self, xinghao):
         self.xinghao = xinghao
         self.zidanshu = 0
@@ -18,9 +19,10 @@ class ShiBing:
     def __init__(self, name):
         self.name = name
         self.qiang = None
+        self.__liandui="三连"
 
     def __str__(self):
-        return f'我是士兵[{self. name}]'
+        return f'我是士兵[{self. name}]，我的连队是{self.__liandui}'
 
     def kaihuo(self):
         if self.qiang is None:
@@ -38,6 +40,7 @@ if __name__=='__main__':
     #ak47.kaiqing()
     #print(ak47)
     xusanduo = ShiBing('许三多')
+    print(xusanduo.name)
     print(xusanduo)
     xusanduo.qiang = ak47
     xusanduo.kaihuo()
